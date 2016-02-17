@@ -1,0 +1,505 @@
+fileFormatVersion: 2
+guid: aa6fc003d1c94f64b886ad5d44ebe82c
+timeCreated: 1444716791
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Liquid Samurai Ready Sword
+    21300002: Liquid Samurai Spawn
+    21300004: Liquid Samurai Sword Jump
+    21300006: Liquid Samurai Sword Attack
+    21300008: Liquid Samurai Sword Death
+    21300010: Liquid Samurai Sword Stance
+    21300012: Liquid Samurai_0
+    21300014: Liquid Samurai_1
+    21300016: Liquid Samurai_2
+    21300018: Liquid Samurai_3
+    21300020: Liquid Samurai_4
+    21300022: Liquid Samurai_5
+    21300024: Liquid Samurai_6
+    21300026: Liquid Samurai_7
+    21300028: Liquid Samurai_8
+    21300030: Liquid Samurai_9
+    21300032: Liquid Samurai_10
+    21300034: Liquid Samurai_11
+    21300036: Liquid Samurai_12
+    21300038: Liquid Samurai_13
+    21300040: Liquid Samurai_14
+    21300042: Liquid Samurai_15
+    21300044: Liquid Samurai_16
+    21300046: Liquid Samurai_17
+    21300048: Liquid Samurai_18
+    21300050: Liquid Samurai_19
+    21300052: Liquid Samurai_20
+    21300054: Liquid Samurai_21
+    21300056: Liquid Samurai_22
+    21300058: Liquid Samurai_23
+    21300060: Liquid Samurai_24
+    21300062: Liquid Samurai_25
+    21300064: Liquid Samurai_26
+    21300066: Liquid Samurai_27
+    21300068: Liquid Samurai_28
+    21300070: Liquid Samurai_29
+    21300072: Liquid Samurai_30
+    21300074: Liquid Samurai_31
+    21300076: Liquid Samurai_32
+    21300078: Liquid Samurai_33
+    21300080: Liquid Samurai_34
+    21300082: Liquid Samurai_35
+    21300084: Liquid Samurai_36
+    21300086: Liquid Samurai_37
+    21300088: Liquid Samurai_38
+    21300090: Liquid Samurai_39
+    21300092: Liquid Samurai_40
+    21300094: Liquid Samurai_41
+    21300096: Liquid Samurai_42
+    21300098: Liquid Samurai_43
+    21300100: Liquid Samurai_44
+    21300102: Liquid Samurai_45
+    21300104: Liquid Samurai_46
+    21300106: Liquid Samurai_47
+    21300108: Liquid Samurai_48
+    21300110: Liquid Samurai_49
+    21300112: Liquid Samurai_50
+    21300114: Liquid Samurai_51
+    21300116: Liquid Samurai_52
+    21300118: Liquid Samurai_53
+    21300120: Liquid Samurai_54
+    21300122: Liquid Samurai_55
+    21300124: Liquid Samurai_56
+    21300126: Liquid Samurai_57
+    21300128: Liquid Samurai_58
+    21300130: Liquid Samurai_59
+    21300132: Liquid Samurai_60
+    21300134: Liquid Samurai_61
+    21300136: Liquid Samurai_62
+    21300138: Liquid Samurai_63
+    21300140: Liquid Samurai_64
+    21300142: Liquid Samurai_65
+    21300144: Liquid Samurai_66
+    21300146: Liquid Samurai_67
+    21300148: Liquid Samurai_68
+    21300150: Liquid Samurai_69
+    21300152: Liquid Samurai_70
+    21300154: Liquid Samurai_71
+    21300156: Liquid Samurai_72
+    21300158: Liquid Samurai_73
+    21300160: Liquid Samurai_74
+    21300162: Liquid Samurai_75
+    21300164: Liquid Samurai_76
+    21300166: Liquid Samurai_77
+    21300168: Liquid Samurai_78
+    21300170: Liquid Samurai_79
+    21300172: Liquid Samurai_80
+    21300174: Liquid Samurai_81
+    21300176: Liquid Samurai_82
+    21300178: Liquid Samurai_83
+    21300180: Liquid Samurai_84
+    21300182: Liquid Samurai_85
+    21300184: Liquid Samurai_86
+    21300186: Liquid Samurai_87
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    sprites:
+    - name: Liquid Samurai_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 984
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 984
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 984
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_3
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 984
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 947
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_5
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 947
+        width: 13
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 909
+        width: 13
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_7
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 910
+        width: 13
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 912
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_17
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 828
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_18
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 828
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_19
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 828
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_20
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 828
+        width: 13
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_21
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 828
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_22
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 828
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_23
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 828
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_24
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 828
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_46
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 454
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_47
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 415
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_48
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 372
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_49
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 331
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_50
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 297
+        width: 58
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_51
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 297
+        width: 58
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_52
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 262
+        width: 58
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_53
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 222
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_54
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 222
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_61
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 187
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_64
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 187
+        width: 37
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_65
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 187
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_66
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 185
+        width: 48
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_67
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 186
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_72
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 76
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_73
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 76
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_74
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 76
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Liquid Samurai_75
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 76
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

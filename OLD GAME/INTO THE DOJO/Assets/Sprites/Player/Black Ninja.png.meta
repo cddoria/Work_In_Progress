@@ -1,0 +1,326 @@
+fileFormatVersion: 2
+guid: e183998ed556d344a9483b09ccd1a875
+timeCreated: 1445546014
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Black Ninja_0
+    21300002: Black Ninja_1
+    21300004: Black Ninja_2
+    21300006: Black Ninja_3
+    21300008: Black Ninja_4
+    21300010: Black Ninja_5
+    21300012: Black Ninja_6
+    21300014: Black Ninja_7
+    21300016: Black Ninja_8
+    21300018: Black Ninja_9
+    21300020: Black Ninja_10
+    21300022: Black Ninja_11
+    21300024: Black Ninja_12
+    21300026: Black Ninja_13
+    21300028: Black Ninja_14
+    21300030: Black Ninja_15
+    21300032: Black Ninja_16
+    21300034: Black Ninja_17
+    21300036: Black Ninja_18
+    21300038: Black Ninja_19
+    21300040: Black Ninja_20
+    21300042: Black Ninja_21
+    21300044: Black Ninja_22
+    21300046: Black Ninja_23
+    21300048: Black Ninja_24
+    21300050: Black Ninja_25
+    21300052: Black Ninja_26
+    21300054: Black Ninja_27
+    21300056: Black Ninja_28
+    21300058: Black Ninja_29
+    21300060: Black Ninja_30
+    21300062: Black Ninja_31
+    21300064: Black Ninja_32
+    21300066: Black Ninja_33
+    21300068: Black Ninja_34
+    21300070: Black Ninja_35
+    21300072: Black Ninja_36
+    21300074: Black Ninja_37
+    21300076: Black Ninja_38
+    21300078: Black Ninja_39
+    21300080: Black Ninja_40
+    21300082: Black Ninja_41
+    21300084: Black Ninja_42
+    21300086: Black Ninja_43
+    21300088: Black Ninja_44
+    21300090: Black Ninja_45
+    21300092: Black Ninja_46
+    21300094: Black Ninja_47
+    21300096: Black Ninja_48
+    21300098: Black Ninja_49
+    21300100: Black Ninja_50
+    21300102: Black Ninja_51
+    21300104: Black Ninja_52
+    21300106: Black Ninja_53
+    21300108: Black Ninja_54
+    21300110: Black Ninja_55
+    21300112: Black Ninja_56
+    21300114: Black Ninja_57
+    21300116: Black Ninja_58
+    21300118: Black Ninja_59
+    21300120: Black Ninja_60
+    21300122: Black Ninja_61
+    21300124: Black Ninja_62
+    21300126: Black Ninja_63
+    21300128: Black Ninja_64
+    21300130: Black Ninja_65
+    21300132: Black Ninja_66
+    21300134: Black Ninja_67
+    21300136: Black Ninja_68
+    21300138: Black Ninja_69
+    21300140: Black Ninja_70
+    21300142: Black Ninja_71
+    21300144: Black Ninja_72
+    21300146: Black Ninja_73
+    21300148: Black Ninja_74
+    21300150: Black Ninja_75
+    21300152: Black Ninja_76
+    21300154: Black Ninja_77
+    21300156: Black Ninja_78
+    21300158: Black Ninja_79
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Black Ninja_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 284
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 285
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_6
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 283
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_7
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 283
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_8
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 282
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_9
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 282
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_11
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 238
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 243
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_14
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 243
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_16
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 237
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_17
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 237
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_18
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 237
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_20
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 200
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_22
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 199
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_23
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 199
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_24
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 199
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_25
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 199
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_34
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 139
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black Ninja_35
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 139
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
