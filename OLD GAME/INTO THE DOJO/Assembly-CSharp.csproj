@@ -51,6 +51,7 @@
      <Compile Include="Assets\Package\Main Menu Package\MenuButtonScript.cs" />
      <Compile Include="Assets\Package\Main Menu Package\NewGameScript.cs" />
      <Compile Include="Assets\Package\Main Menu Package\QuitButtonScript.cs" />
+     <Compile Include="Assets\Package\Main Menu Package\RetryButtonScript.cs" />
      <Compile Include="Assets\Package\SFX\SetSFXSelector.cs" />
      <Compile Include="Assets\Package\Scripts\DamagePlayer.cs" />
      <Compile Include="Assets\Package\Scripts\Death.cs" />
@@ -68,8 +69,6 @@
      <Compile Include="Assets\Package\Tutorial Level Package\Scripts\SfxScript 1.cs" />
      <Compile Include="Assets\Package\Tutorial Level Package\ShowTutorialScript.cs" />
      <Compile Include="Assets\Package\Tutorial Level Package\StarScriptEnemy.cs" />
-     <Compile Include="Assets\PauseScript.cs" />
-     <Compile Include="Assets\PlayAcrossScenes.cs" />
      <Compile Include="Assets\Scripts\AStar\Decompose.cs" />
      <Compile Include="Assets\Scripts\AStar\FindPath.cs" />
      <Compile Include="Assets\Scripts\AStar\FindPath2.cs" />
@@ -77,6 +76,8 @@
      <Compile Include="Assets\Scripts\Enemy\EnemyPatrol.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyPatrol1.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyPatrol2.cs" />
+     <Compile Include="Assets\Scripts\PauseScript.cs" />
+     <Compile Include="Assets\Scripts\PlayAcrossScenes.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\Weapon\NinjaStarVelocity.cs" />
      <Compile Include="Assets\Scripts\Player\Weapon\ThrowNinjaStar.cs" />

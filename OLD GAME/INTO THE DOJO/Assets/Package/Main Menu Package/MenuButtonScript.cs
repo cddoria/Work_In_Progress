@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class MenuButtonScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Application.LoadLevel("Menu");
+        SceneManager.LoadScene("Menu");
 	}
 }
