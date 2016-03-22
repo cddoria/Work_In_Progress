@@ -4,35 +4,37 @@ using System.Collections;
 public class MoveAndLook : MonoBehaviour
 {
 
-    public float LookSensitivity = .02f;
-    private Vector3 old, cur, left, right, up, down;
+    public Vector2 LookSensitivity = new Vector2(10f, 5f);
+    private Transform self;
+    private float X_rot, Y_rot;
+    private Vector3 direction;
+    private Vector3 target;
+    private float movementSmoothing = .3f;
 
     void Start()
     {
-        cur = Input.mousePosition;
-        old = Vector3.zero;
-        left = this.gameObject.transform.rotation.eulerAngles + Vector3.left;
-        right = this.gameObject.transform.rotation.eulerAngles + Vector3.right;
-        up = this.gameObject.transform.rotation.eulerAngles + Vector3.up;
-        down = this.gameObject.transform.rotation.eulerAngles + Vector3.down;
+        self = gameObject.GetComponent<Transform>();
+        X_rot = self.localEulerAngles.y;
+        Y_rot = self.localEulerAngles.x;
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Add Camera Rotation Code Here
-        /***********/
-        //
+        X_rot += Input.GetAxis("Mouse Y") * LookSensitivity.y;
+        Y_rot += Input.GetAxis("Mouse X") * LookSensitivity.x;
 
-        if (Input.GetKey(KeyCode.W))
-            this.gameObject.transform.position += new Vector3(0f, 0f, .2f);
-        if (Input.GetKey(KeyCode.A))
-            this.gameObject.transform.position += new Vector3(-.2f, 0f, 0f);
-        if (Input.GetKey(KeyCode.S))
-            this.gameObject.transform.position += new Vector3(0f, 0f, -.2f);
-        if (Input.GetKey(KeyCode.D))
-            this.gameObject.transform.position += new Vector3(.2f, 0f, 0f); ;
+        X_rot = Mathf.Clamp(X_rot, -65f, 65f);
 
-        old = cur;
+        if (Y_rot > 360f)
+            Y_rot -= 360f;
+
+        self.localEulerAngles = new Vector3(-X_rot, Y_rot, 0f);
+
+        direction = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+
+        target = transform.position + direction;
+
+        transform.position = Vector3.MoveTowards(transform.position, target, movementSmoothing);
     }
 }
