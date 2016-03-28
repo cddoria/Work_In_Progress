@@ -45,8 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\HealthScript.cs" />
      <Compile Include="Assets\MenuControllerScript.cs" />
      <Compile Include="Assets\MoveAndLook.cs" />
+     <Compile Include="Assets\NinjaStarScript.cs" />
      <Compile Include="Assets\ThrowStar.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
