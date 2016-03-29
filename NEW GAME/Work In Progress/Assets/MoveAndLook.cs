@@ -33,8 +33,8 @@ public class MoveAndLook : MonoBehaviour
 
         direction = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
 
-        target = transform.position + direction;
+        target = transform.TransformPoint(direction);
 
-        transform.position = Vector3.MoveTowards(transform.position, target, movementSmoothing);
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(target.x, transform.position.y, target.z), movementSmoothing);
     }
 }

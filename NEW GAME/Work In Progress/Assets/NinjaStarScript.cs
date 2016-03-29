@@ -3,27 +3,37 @@ using System.Collections;
 
 public class NinjaStarScript : MonoBehaviour {
 
+    public float lifespan;
     private Rigidbody rb;
-    private Animation anim;
-    private Transform trans;
-    private Collider col, pCol;
+    public Animator anim;
+    private bool freeze = false;
 
     void Start()
     {
-        rb = gameObject.GetComponentInParent<Rigidbody>();
-        anim = gameObject.GetComponent<Animation>();
-        trans = gameObject.GetComponent<Transform>();
-        col = gameObject.GetComponent<Collider>();
-        pCol = gameObject.GetComponentInParent<Collider>();
-        Physics.IgnoreCollision(col, pCol);
+        rb = gameObject.GetComponent<Rigidbody>();
+    }
+    // Use this for initialization
+    void Update()
+    {
+        lifespan -= Time.deltaTime;
+
+        if (lifespan < 0f)
+            Destroy(this.gameObject);
+
+        if (freeze)
+        {
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            anim.Stop();
+        }
     }
 
-    // Use this for initialization
-    void OnCollisionEnter(Collision obj)
+    void OnTriggerEnter(Collider obj)
     {
-        trans.parent = obj.gameObject.transform;
         rb.constraints = RigidbodyConstraints.FreezeAll;
-        col.isTrigger = true;
-        anim.Stop();
+        rb.detectCollisions = false;
+        rb.velocity = Vector3.zero;
+        freeze = true;
+        this.transform.position = this.transform.TransformPoint(Vector3.forward *.5f);
     }
 }

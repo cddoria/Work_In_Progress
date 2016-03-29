@@ -8,6 +8,7 @@ public class HealthScript : MonoBehaviour {
     void OnCollisionEnter(Collision obj)
     {
         TakeDamage(obj.gameObject.tag);
+        if (obj.gameObject.tag == "Projectile") Destroy(obj.gameObject.transform.root.gameObject);
         CheckForDeath();
     }
 
