@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\FixedRotations.cs" />
      <Compile Include="Assets\HealthScript.cs" />
      <Compile Include="Assets\MenuControllerScript.cs" />
      <Compile Include="Assets\MoveAndLook.cs" />
