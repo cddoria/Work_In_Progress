@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Character Pack/scene2.unity
+- path: Assets/Scenes/Progress.unity
   isLoaded: 1
   isActive: 1
