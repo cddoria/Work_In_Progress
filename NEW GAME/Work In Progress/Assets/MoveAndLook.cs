@@ -5,15 +5,16 @@ public class MoveAndLook : MonoBehaviour
 {
 
     public Vector2 LookSensitivity = new Vector2(10f, 5f);
-    private Transform self;
+    private Transform self, parent;
     private float X_rot, Y_rot;
     private Vector3 direction;
     private Vector3 target;
-    private float movementSmoothing = .3f;
+    public float movementSmoothing = .3f;
 
     void Start()
     {
         self = gameObject.GetComponent<Transform>();
+        parent = gameObject.transform.root.GetComponentInParent<Transform>();
         X_rot = self.localEulerAngles.y;
         Y_rot = self.localEulerAngles.x;
     }
@@ -24,7 +25,7 @@ public class MoveAndLook : MonoBehaviour
         X_rot += Input.GetAxis("Mouse Y") * LookSensitivity.y;
         Y_rot += Input.GetAxis("Mouse X") * LookSensitivity.x;
 
-        X_rot = Mathf.Clamp(X_rot, -65f, 65f);
+        X_rot = Mathf.Clamp(X_rot, -45f, 65f);
 
         if (Y_rot > 360f)
             Y_rot -= 360f;
@@ -33,8 +34,8 @@ public class MoveAndLook : MonoBehaviour
 
         direction = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
 
-        target = transform.TransformPoint(direction);
+        target = parent.TransformPoint(direction);
 
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(target.x, transform.position.y, target.z), movementSmoothing);
+        parent.position = Vector3.MoveTowards(parent.position, new Vector3(target.x, parent.position.y, target.z), movementSmoothing);
     }
 }

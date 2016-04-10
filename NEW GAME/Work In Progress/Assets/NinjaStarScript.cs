@@ -7,10 +7,12 @@ public class NinjaStarScript : MonoBehaviour {
     private Rigidbody rb;
     public Animator anim;
     private bool freeze = false;
+    public Vector3 rot;
 
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+        rot = gameObject.transform.rotation.eulerAngles;
     }
     // Use this for initialization
     void Update()
@@ -34,6 +36,7 @@ public class NinjaStarScript : MonoBehaviour {
         rb.detectCollisions = false;
         rb.velocity = Vector3.zero;
         freeze = true;
-        this.transform.position = this.transform.TransformPoint(Vector3.forward *.5f);
+        this.transform.position = this.gameObject.transform.root.TransformPoint(Vector3.forward *.5f);
+        this.transform.eulerAngles = rot;
     }
 }

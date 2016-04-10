@@ -19,7 +19,7 @@ public class ThrowStar : MonoBehaviour
             starRB = temp.GetComponent<Rigidbody>();
             starRB.useGravity = false;
             starRB.AddForce((Vector3.left+Vector3.down) * 75f);
-            starRB.AddForce(trans.forward*1000f);
+            starRB.AddForce(trans.forward*(1000f +(100f*Input.GetAxis("Vertical"))));
             starRB.gameObject.GetComponentInParent<Transform>().rotation = Quaternion.LookRotation(trans.forward);
             Destroy(temp, 3f);
         }
