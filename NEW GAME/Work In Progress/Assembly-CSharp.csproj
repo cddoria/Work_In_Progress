@@ -45,17 +45,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\HealthBarScript.cs" />
-     <Compile Include="Assets\PlayerAmmoScript.cs" />
-     <Compile Include="Assets\PlayerHealthScript.cs" />
      <Compile Include="Assets\Scripts\FixedRotations.cs" />
+     <Compile Include="Assets\Scripts\HealthBarScript.cs" />
      <Compile Include="Assets\Scripts\HealthScript.cs" />
      <Compile Include="Assets\Scripts\MenuControllerScript.cs" />
      <Compile Include="Assets\Scripts\MoveAndLook.cs" />
      <Compile Include="Assets\Scripts\NinjaStarScript.cs" />
+     <Compile Include="Assets\Scripts\PauseScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerAmmoScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerHealthScript.cs" />
+     <Compile Include="Assets\Scripts\SpecialBarScript.cs" />
+     <Compile Include="Assets\Scripts\TestingControlsScript.cs" />
      <Compile Include="Assets\Scripts\ThrowStar.cs" />
-     <Compile Include="Assets\SpecialBarScript.cs" />
-     <Compile Include="Assets\TestingControlsScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
