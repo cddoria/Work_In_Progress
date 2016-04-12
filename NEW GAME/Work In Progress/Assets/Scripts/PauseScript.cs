@@ -9,10 +9,8 @@ public class PauseScript : MonoBehaviour {
     public ThrowStar throwStarScript;
 
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Escape)) //escape toggles pause
-        {
+        if (Input.GetKeyDown(KeyCode.Tab)) //escape toggles pause
             pause = !pause;
-        }
 
         if (pause)
             Time.timeScale = 0.0f;
