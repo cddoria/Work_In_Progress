@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: fcc026564ffc982489e05b660528e172
+timeCreated: 1460490119
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Camera
+    100004: Character
+    100006: Character_MeshPart0
+    100008: Character_MeshPart1
+    100010: Character_MeshPart2
+    100012: Character_MeshPart3
+    100014: Character_MeshPart4
+    100016: Character_MeshPart5
+    100018: Foot Left
+    100020: Foot Right
+    100022: Hand Left
+    100024: Hand Right
+    100026: Head
+    100028: Head_end
+    100030: Index1 Left
+    100032: Index1 Right
+    100034: Index2 Left
+    100036: Index2 Right
+    100038: Index3 Left
+    100040: Index3 Left_end
+    100042: Index3 Right
+    100044: Index3 Right_end
+    100046: Knee/Shin Left
+    100048: Knee/Shin Right
+    100050: Lower Arm Left
+    100052: Lower Arm Right
+    100054: //RootNode
+    100056: Mid1 Left
+    100058: Mid1 Right
+    100060: Mid2 Left
+    100062: Mid2 Right
+    100064: Mid3 Left
+    100066: Mid3 Left_end
+    100068: Mid3 Right
+    100070: Mid3 Right_end
+    100072: Neck
+    100074: Pinky1 Left
+    100076: Pinky1 Right
+    100078: Pinky2 Left
+    100080: Pinky2 Right
+    100082: Pinky3 Left
+    100084: Pinky3 Left_end
+    100086: Pinky3 Right
+    100088: Pinky3 Right_end
+    100090: Ring1 Left
+    100092: Ring1 Right
+    100094: Ring2 Left
+    100096: Ring2 Right
+    100098: Ring3 Left
+    100100: Ring3 Left_end
+    100102: Ring3 Right
+    100104: Ring3 Right_end
+    100106: Root Bone
+    100108: Shoulder
+    100110: Shoulder.002
+    100112: Spine 1
+    100114: Spine 2
+    100116: Sun
+    100118: Thigh Left
+    100120: Thigh Right
+    100122: Thumb1 Left
+    100124: Thumb1 Right
+    100126: Thumb2 Left
+    100128: Thumb2 Right
+    100130: Thumb3 Left
+    100132: Thumb3 Left_end
+    100134: Thumb3 Right
+    100136: Thumb3 Right_end
+    100138: Toe Left
+    100140: Toe Left_end
+    100142: Toe Right
+    100144: Toe Right_end
+    100146: Upper Arm Left
+    100148: Upper Arm Right
+    400000: Armature
+    400002: Camera
+    400004: Character
+    400006: Character_MeshPart0
+    400008: Character_MeshPart1
+    400010: Character_MeshPart2
+    400012: Character_MeshPart3
+    400014: Character_MeshPart4
+    400016: Character_MeshPart5
+    400018: Foot Left
+    400020: Foot Right
+    400022: Hand Left
+    400024: Hand Right
+    400026: Head
+    400028: Head_end
+    400030: Index1 Left
+    400032: Index1 Right
+    400034: Index2 Left
+    400036: Index2 Right
+    400038: Index3 Left
+    400040: Index3 Left_end
+    400042: Index3 Right
+    400044: Index3 Right_end
+    400046: Knee/Shin Left
+    400048: Knee/Shin Right
+    400050: Lower Arm Left
+    400052: Lower Arm Right
+    400054: //RootNode
+    400056: Mid1 Left
+    400058: Mid1 Right
+    400060: Mid2 Left
+    400062: Mid2 Right
+    400064: Mid3 Left
+    400066: Mid3 Left_end
+    400068: Mid3 Right
+    400070: Mid3 Right_end
+    400072: Neck
+    400074: Pinky1 Left
+    400076: Pinky1 Right
+    400078: Pinky2 Left
+    400080: Pinky2 Right
+    400082: Pinky3 Left
+    400084: Pinky3 Left_end
+    400086: Pinky3 Right
+    400088: Pinky3 Right_end
+    400090: Ring1 Left
+    400092: Ring1 Right
+    400094: Ring2 Left
+    400096: Ring2 Right
+    400098: Ring3 Left
+    400100: Ring3 Left_end
+    400102: Ring3 Right
+    400104: Ring3 Right_end
+    400106: Root Bone
+    400108: Shoulder
+    400110: Shoulder.002
+    400112: Spine 1
+    400114: Spine 2
+    400116: Sun
+    400118: Thigh Left
+    400120: Thigh Right
+    400122: Thumb1 Left
+    400124: Thumb1 Right
+    400126: Thumb2 Left
+    400128: Thumb2 Right
+    400130: Thumb3 Left
+    400132: Thumb3 Left_end
+    400134: Thumb3 Right
+    400136: Thumb3 Right_end
+    400138: Toe Left
+    400140: Toe Left_end
+    400142: Toe Right
+    400144: Toe Right_end
+    400146: Upper Arm Left
+    400148: Upper Arm Right
+    4300000: Character_MeshPart0
+    4300002: Character_MeshPart1
+    4300004: Character_MeshPart2
+    4300006: Character_MeshPart3
+    4300008: Character_MeshPart4
+    4300010: Character_MeshPart5
+    9500000: //RootNode
+    13700000: Character_MeshPart0
+    13700002: Character_MeshPart1
+    13700004: Character_MeshPart2
+    13700006: Character_MeshPart3
+    13700008: Character_MeshPart4
+    13700010: Character_MeshPart5
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
