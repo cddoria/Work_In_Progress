@@ -45,11 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Enemy\Decompose.cs" />
-     <Compile Include="Assets\Scripts\Enemy\FindPath.cs" />
-     <Compile Include="Assets\Scripts\Enemy\Heap.cs" />
-     <Compile Include="Assets\Scripts\Enemy\KinematicArrive.cs" />
-     <Compile Include="Assets\Scripts\Enemy\Node.cs" />
+     <Compile Include="Assets\Scripts\AStar\Decompose.cs" />
+     <Compile Include="Assets\Scripts\AStar\FindPath.cs" />
+     <Compile Include="Assets\Scripts\AStar\Heap.cs" />
+     <Compile Include="Assets\Scripts\AStar\Node.cs" />
+     <Compile Include="Assets\Scripts\Enemy Movement\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Player Movement\PlayerMovement.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
