@@ -13,25 +13,19 @@ public class Decompose : MonoBehaviour {
 	public List<Node> path; //List for path nodes
 	public LayerMask unwalkable; //Layermask for obstacles
 	public Vector2 worldSize; //Size of the world of nodes
-	public Vector3 worldPoint;
 	public float radius; //Node radius
 	public bool onlyDisplayPathGizmos; //Check true in editor to only show path gizmos
-	public bool walkable;
 
 	Node[,] world; //2D array of nodes in world
-	
+	Vector3 worldPoint;
 	private float diameter; //Node diameter
 	private int worldSizeX, worldSizeY; //X and Y coordinates of world
+	bool walkable;
 	
 	void Start() {
 		diameter = radius * 2;
 		worldSizeX = Mathf.RoundToInt (worldSize.x / diameter);
 		worldSizeY = Mathf.RoundToInt (worldSize.y / diameter);
-
-		/*if (worldSizeX == 0 && worldSizeY == 0) {
-			worldSizeX = Mathf.RoundToInt (GameObject.Find ("Plane").GetComponent<Collider> ().bounds.size.x / diameter);
-			worldSizeY = Mathf.RoundToInt (GameObject.Find ("Plane").GetComponent<Collider> ().bounds.size.z / diameter);
-		}*/
 
 		DecomposeWorld(); //Initialize the world
 	}
