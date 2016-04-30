@@ -1,5 +1,8 @@
 ﻿/* Programmer: Kenneth Widemon
- * Description: *** NEW KINEMATIC ARRIVE FOR A* ***
+ * Description: If followWaypoints = true, then the enemy will follow a designated path of waypoints. If followWaypoints =
+ * 				false, then the enemy will follow it's found path towards the player. The break point between the two is
+ * 				determined by a raycast; if it collieds with the object tagged as "Player", then followWaypoints is set to
+ * 				false.
 */
 
 using UnityEngine;
@@ -16,7 +19,7 @@ public class EnemyMovement : MonoBehaviour {
 	public float rotationSpeed = 360f; //Speed at which moving object rotates
 	public float radius = .01f; //Satisfaction radius
 	public float maxRayDistance = 10f; //Max distance of raycast
-	public bool followWaypoints; //For testing and toggling between movement along waypoints and AStar path
+	public bool followWaypoints; //For toggling between movement along waypoints and AStar path
 
 	Transform nextWaypoint; //Children of parent waypoint
 	int next = 0; //Next waypoint target
@@ -30,10 +33,10 @@ public class EnemyMovement : MonoBehaviour {
 	Quaternion targetRotation; //Look at target
 	Quaternion newRotation; //Updated rotation as transform moves
 
-	//Initialize
+	//Use for Initialization
 	void Start(){
-		trans = GetComponent<Transform> ();
-		rb = GetComponent<Rigidbody> ();
+		trans = GetComponent<Transform> (); //This transform
+		rb = GetComponent<Rigidbody> (); //This rigidbody
 		trans.position = waypointsParent.GetChild(0).position; //Enemy's initial position will be first waypoint
 		followWaypoints = true; //Whether to follow the waypoints
 	}
@@ -72,15 +75,19 @@ public class EnemyMovement : MonoBehaviour {
 
 			//Move along waypoint path
 			if (toWaypoint < 0.1) {
-				next += nextDirection; //Increment the next waypoint counter
+				//Increment the next waypoint counter
+				next += nextDirection;
 
 				//Reverse waypoint path
 				if (next >= waypointsParent.childCount) {
-					next = waypointsParent.childCount - 1; //Decrement the next waypoint counter
+					//Decrement the next waypoint counter
+					next = waypointsParent.childCount - 1;
+					//Set the direction to the previous waypoint
 					nextDirection = -1;
 				} else if (next < 0) {
 					//Reset enemy's position to first waypoint
 					next = 0;
+					//Set the direction to the next waypoint
 					nextDirection = 1;
 				}
 			} else {
@@ -92,6 +99,7 @@ public class EnemyMovement : MonoBehaviour {
 		}
 	}
 
+	//Moving the enemy toward the player if the enemy is no longer following waypoints
 	void Move(){
 		if (followWaypoints == false) {
 			//If no path
@@ -104,20 +112,24 @@ public class EnemyMovement : MonoBehaviour {
 				return;
 			}
 
-			targetDirection = path [current].worldPos - trans.position; //get direction of target
-			targetDirection.y = 0; //Avoids tilting
-			toTarget = targetDirection.magnitude; //get horizontal distance	
+			//Get direction of target
+			targetDirection = path [current].worldPos - trans.position;
+			//Avoid tilting
+			targetDirection.y = 0;
+			//Get horizontal distance
+			toTarget = targetDirection.magnitude;	
 
-			//If within next node's radius, move along path
+			//If within next node's radius...
 			if (toTarget > radius) {
-				//Rotate towards target
+				//Rotate towards target node
 				Rotate ();
-				//move in forward direction
+				//Move along path in forward direction
 				trans.position = Vector3.MoveTowards (trans.position, path [current].worldPos, moveSpeed * Time.deltaTime);
 			}
 		}
 	}
 
+	//Rotates the enemy to either the next waypoint or the player, depending on whether or not it's following the waypoints
 	void Rotate(){
 		if (followWaypoints == true) {
 			targetRotation = Quaternion.LookRotation (waypointDirection, Vector3.up);
