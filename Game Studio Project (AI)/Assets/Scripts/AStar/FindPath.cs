@@ -13,7 +13,8 @@ public class FindPath : MonoBehaviour {
 	
 	//Instead of Start() for script referencing
 	void Awake() {
-		decompScript = GetComponent<Decompose> (); //Gets script from this object
+		//Gets script from this object
+		decompScript = GetComponent<Decompose> ();
 	}
 	
 	//Find the path (start = enemy ... end = player)

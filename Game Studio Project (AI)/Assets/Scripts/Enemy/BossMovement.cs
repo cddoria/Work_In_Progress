@@ -24,6 +24,12 @@ public class BossMovement : MonoBehaviour {
 	Quaternion newRotation; //Updated rotation as transform moves
 	FindPath pathfindingScript; //FindPath script reference
 
+	//Instead of Start() for script referencing
+	void Awake() {
+		//Gets the script from the object found
+		pathfindingScript = GameObject.Find("AStar").GetComponent<FindPath> ();
+	}
+
 	//Use for Initialization
 	void Start(){
 		//This transform
@@ -32,8 +38,6 @@ public class BossMovement : MonoBehaviour {
 		rb = GetComponent<Rigidbody> ();
 		//Find and assign the target transform
 		target = GameObject.Find ("Player").transform;
-
-		pathfindingScript = GameObject.Find("AStar").GetComponent<FindPath> ();
 	}
 
 	// Update is called once per frame
