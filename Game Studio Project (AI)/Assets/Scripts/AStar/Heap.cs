@@ -1,5 +1,5 @@
 ﻿/* Programmer: Kenneth Widemon
- * Description: Heap Class that the other scripts reference to search nodes in the world
+ * Description: Heap Class that the other scripts reference to search for nodes in the world
 */
 
 using UnityEngine;
@@ -25,6 +25,7 @@ public class Heap<Type> where Type : IHeapItem<Type> {
 
 		//Sort items
 		SortUp (item);
+		//Increment item count
 		currentItemCount++;
 	}
 
@@ -38,31 +39,31 @@ public class Heap<Type> where Type : IHeapItem<Type> {
 		items [0] = items [currentItemCount];
 		items [0].HeapIndex = 0;
 
-		//Sort items
 		SortDown (items [0]);
 
 		return firstItem;
 	}
 
-	//Change priority of item with lower f cost if new path has been found to it (updates position in heap)
+	//Change priority of the item with lower f cost if new path has been found to it (updates position in heap)
 	public void UpdateItem(Type item){
-		//In path finding, we only increase priority, never decrease it
+		//In path finding, we only increase priority, never decrease it; Sort items up the heap
 		SortUp (item);
 	}
 
-	//Return number of items currently in heap
+	//Return the number of items currently in heap
 	public int Count{
 		get{
 			return currentItemCount;
 		}
 	}
 
-	//Check for specific items
+	//Check for specific items by index
 	public bool Contains(Type item){
-		//Check if item in array with same index as the item being passed in is equal to the actual item being passed in
+		//Check whether the item in array with the same index as the item being passed in, is equal to the actual item being passed in
 		return Equals(items[item.HeapIndex], item);
 	}
 
+	//Sort items down the heap
 	void SortDown(Type item){
 		while (true) {
 			//Left Child Index : 2n + 1
@@ -74,12 +75,14 @@ public class Heap<Type> where Type : IHeapItem<Type> {
 
 			//If item has at least one child...
 			if (childLeftIndex < currentItemCount) {
+				//Set the index of the item to swap
 				swapIndex = childLeftIndex;
 
 				//If item has a second child...
 				if (childRightIndex < currentItemCount) {
 					//Compare children to determine higher priority ; If left child has lower priority than right child...
 					if (items [childLeftIndex].CompareTo (items [childRightIndex]) < 0) {
+						//Set the index of the item to swap
 						swapIndex = childRightIndex;
 					}
 				}
@@ -87,6 +90,7 @@ public class Heap<Type> where Type : IHeapItem<Type> {
 				//Compare parent to highest priority child to determine higher priority ; 
 				//If parent has lower priority than highest priority child...
 				if (item.CompareTo (items [swapIndex]) < 0) {
+					//Swap the parent and child positions in the heap
 					Swap (item, items [swapIndex]);
 				} else {
 					return;
@@ -105,6 +109,7 @@ public class Heap<Type> where Type : IHeapItem<Type> {
 
 		//Compare items
 		while(true){
+			//Parent item
 			Type parentItem = items[parentIndex];
 
 			//If item has higher priority than the parent...

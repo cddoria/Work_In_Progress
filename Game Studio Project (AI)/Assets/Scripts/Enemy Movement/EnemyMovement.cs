@@ -8,16 +8,16 @@ using System.Collections;
 public class EnemyMovement : MonoBehaviour {
 
 	public Transform trans; //Transform of this object
-	public GameObject player; //Player transform
+	public Transform ray; //Transform of raycast object
 	public GameObject waypointsParent; //Parent of waypoints
-	public int numberOfWaypoints; //How many waypoints to create
+	//public int numberOfWaypoints; //How many waypoints to create
 	public float moveSpeed = 10f; //Max movement speed
 	public float rotationSpeed = 360f; //Speed at which moving object rotates
 	public float radius = .01f; //Satisfaction radius
-	public float maxRayDistance = 5f; //Max distance of raycast
+	public float maxRayDistance = 10f; //Max distance of raycast
 	public bool followWaypoints; //For testing and toggling between movement along waypoints and AStar path
 
-	GameObject waypointChildren; //Children of waypoints
+	//GameObject waypointChildren; //Children of waypoints
 	Transform nextWaypoint; //Children of parent waypoint
 	int next = 0; //Next waypoint target
 	int nextDirection = 1; //Adjustor for reversing waypoint path
@@ -30,12 +30,10 @@ public class EnemyMovement : MonoBehaviour {
 	Quaternion targetRotation; //Look at target
 	Quaternion newRotation; //Updated rotation as transform moves
 	Decompose decompScript; //Decompose script
-	FindPath pathFindingScript; //FindPath script
 
 	//Awake() instead of Start() for script referencing, occurs first at runtime
 	void Awake(){
 		decompScript = GameObject.Find ("AStar").GetComponent<Decompose> ();
-		pathFindingScript = GameObject.Find ("AStar").GetComponent<FindPath> ();
 
 	}
 
@@ -44,16 +42,17 @@ public class EnemyMovement : MonoBehaviour {
 		trans = GetComponent<Transform> ();
 		rb = GetComponent<Rigidbody> ();
 
-		if (waypointsParent == null && numberOfWaypoints != 0) {
+		/*if (waypointsParent == null && numberOfWaypoints != 0) {
 			CreateWaypoints (numberOfWaypoints); //Create new waypoints
 		}else if(waypointsParent == null || numberOfWaypoints == 0){
 			waypointsParent = GameObject.Find ("Waypoints"); //Finds and assigns the Waypoints' parent
-		}
+		}*/
+
+		waypointsParent = GameObject.Find ("Waypoints"); //Finds and assigns the Waypoints' parent
 
 		trans.position = waypointsParent.transform.GetChild(0).position; //Enemy's initial position will be first waypoint
+		ray = GameObject.Find ("RayCast").GetComponent<Transform>(); //Finds and assigns the Waypoints' parent
 		followWaypoints = true;
-
-		player = GameObject.Find ("Player");
 	}
 
 	// Update is called once per frame
@@ -62,7 +61,7 @@ public class EnemyMovement : MonoBehaviour {
 		FollowWaypoints ();
 	}
 
-	//Create a set of waypoints if not originally created
+	/*//Create a set of waypoints if not originally created
 	void CreateWaypoints(int numWaypoints){
 		
 		waypointsParent = new GameObject ("Waypoints");
@@ -81,17 +80,18 @@ public class EnemyMovement : MonoBehaviour {
 
 			waypointChildren.transform.parent = waypointsParent.transform;
 		}
-	}
+	}*/
 
 	//A Raycast is shot from the Enemy's position along the forward vector and detects collision with the Player
 	void RayCast(){
 		RaycastHit hit;
-		Vector3 forward = trans.TransformDirection (Vector3.forward) * maxRayDistance;
+		Ray raycast = new Ray (ray.position, trans.forward);
 
-		Debug.DrawRay (trans.position, forward, Color.blue);
+		Debug.DrawRay (ray.position, trans.forward * maxRayDistance, Color.blue);
 
-		if (Physics.Raycast(trans.position, forward, out hit)){
+		if (Physics.Raycast(raycast, out hit, maxRayDistance)){
 			if (hit.collider.tag == "Player") {
+				//Debug.Log ("Hit");
 				followWaypoints = false;
 			}
 		}
@@ -100,7 +100,6 @@ public class EnemyMovement : MonoBehaviour {
 	//Enemy will move along waypoint path until it sees the player
 	void FollowWaypoints(){
 		if (followWaypoints == true) {
-			pathFindingScript.target = nextWaypoint;
 			//Set next waypoint to the next child of the Waypoints transform
 			nextWaypoint = waypointsParent.transform.GetChild (next);
 
@@ -128,7 +127,6 @@ public class EnemyMovement : MonoBehaviour {
 				trans.position = Vector3.MoveTowards (trans.position, nextWaypoint.position, moveSpeed * Time.deltaTime);
 			}
 		} else if(followWaypoints == false){
-			pathFindingScript.target = player.transform;
 			Move ();
 		}
 	}
@@ -158,7 +156,7 @@ public class EnemyMovement : MonoBehaviour {
 	}
 
 	void Rotate(){
-		if (followWaypoints) {
+		if (followWaypoints == true) {
 			targetRotation = Quaternion.LookRotation (waypointDirection, Vector3.up);
 
 			newRotation = Quaternion.Lerp (rb.rotation, targetRotation, rotationSpeed * Time.deltaTime);
